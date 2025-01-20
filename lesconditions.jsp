@@ -27,6 +27,10 @@
             <p>Valeur 1 est inférieure à Valeur 2.</p>
         <% } else { %>
             <p>Valeur 1 est égale à Valeur 2.</p>
+  <% if (intValeur1 %2 ==0){%>
+<p> valeur 1 est paire </p>
+<%} else {%>
+<p>Valeur 1 est impaire </p>
         <% } %>
    
     
