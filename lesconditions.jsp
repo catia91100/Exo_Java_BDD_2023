@@ -49,35 +49,6 @@ Oui C est compris entre A et B</p>
             <p>Valeur 1 est impaire </p>
         <% } %>
 
- <% while (1) { %> // Boucle infinie
-     // Initialiser le générateur de nombres aléatoires
-    <% srand(time(NULL)); %> // Utiliser le temps actuel comme graine
-      // Générer un nombre aléatoire entre 1 et 100
-    <% int valeur1 = (rand() % 100) + 1; %>
-    
-     <% int valeur2; %> // Variable pour stocker le nombre
-    
-    <p> Veuillez entrer un chiffre <p>
-    <% scanf("%d", &valeur2); %> // Lire l'entrée utilisateur et stocker dans la variable
-    
-     // Vérifier si le nombre est plus grand ou plus petit que 50
-   <% if ( intValeur1> intValeur2) {%>
-        <p>Le nombre est plus grand <p>
-    <%} 
-    else if (intValeur1 < intValeur2) {%>
-        <p>Le nombre est plus petit <p>;
-   <% }
-    
-    else { %>
-        <P>bravo vous avez gagné <p>;
-         break; 
-     <%}
-
-        
-        <%}
-
-    return 0;
-<%}
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
