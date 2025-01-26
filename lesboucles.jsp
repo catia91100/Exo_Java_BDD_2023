@@ -74,7 +74,7 @@
     <%int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
-     <% for (int j =i; j <= cpt; j++) { %>
+     <% for (int j =i; j > i; j++) { %>
        <%= "*" %>
   <% } %>
 <br>
@@ -106,12 +106,47 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;***</br>&nbsp;****</br>*****</p>
 
+<%-- Vérification de l'existence de la valeur --%>
+<% if (valeur != null && !valeur.isEmpty()) { %>
+
+<%-- Boucle for pour afficher un triangle isocele d'étoiles --%>
+    <%int cpt = Integer.parseInt(valeur); %>
+    <p>
+    <% for (int i = 1; i <= cpt; i++) { %>
+    <% for (int j =1; j <= cpt -1; j++) { %>
+       <%= "&nbsp" %>
+    <% for (int k =1; k <= (i*2-1); k++) { %>
+        <%= "*" %>
+  <% } %>
+<br>
+    <% } %>
+    </p>
+
 <h2>Exercice 6 : Le demi losange</h2>
 <p>Ecrire le code afin de produire un losange</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
 <p>*****</br>&nbsp;&nbsp;****</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>
 
+<%-- Vérification de l'existence de la valeur --%>
+<% if (valeur != null && !valeur.isEmpty()) { %>
+
+<%-- Boucle for pour afficher un demi losange d'étoiles  --%>
+    <%int cpt = Integer.parseInt(valeur); %>
+    <p>
+    <% for (int i = 1; i <= cpt; i++) { %>
+    <% for (int j =1; j <= cpt; j++) { %>
+        <%= "*" %>
+  <% } %>
+<br>
+    <% } %>
+    </p>
+<% for (int i = 1; i <= cpt; i++) { %>
+    <% for (int j = cpt; j > i; j++) { %>
+        <%= "*" %>
+  <% } %>
+<br>
+    <% } %>
 <h2>Exercice 7 : La table de multiplication</h2>
 <p>Ecrire le code afin de créser une table de multiplication</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
@@ -120,6 +155,21 @@
 <p>5 x 3 = 15</p>
 <p>5 x 4 = 20</p>
 <p>5 x 5 = 25</p>
+
+<%-- Récupération de la valeur saisie par l'utilisateur --%>
+<% String valeur = request.getParameter("valeur"); %>
+    
+<%-- Vérification de l'existence de la valeur --%>
+<% if (valeur != null && !valeur.isEmpty()) { %>
+
+<%-- Boucle for pour afficher une ligne d'étoiles --%>
+    <%int cpt = Integer.parseInt(valeur); %>
+    <p>
+    <% for (int i = 1; i <= cpt; i++) { %>
+       <%= i %> x <%= cpt %> = <% i*cpt %>
+    <% } %>
+    </p>
+
 
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
