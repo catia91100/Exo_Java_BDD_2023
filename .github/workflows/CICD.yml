@@ -1,4 +1,4 @@
-name: Industrialisation continue sur le serveur AWS (Tomcat)
+name: Industrialisation continue sur le serveur AWS (Tomcat)1
 on: push
 jobs:
   Deploy:
