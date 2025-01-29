@@ -37,7 +37,7 @@
 
 <%-- Boucle for pour afficher un carré d'étoiles --%>
     <% for (int i = 1; i <= cpt; i++) { %>
-     <% for (int j =1; j <= cpt; j++) { %>
+     <% for (int j = 1; j <= cpt; j++) { %>
        <%= "*" %> 
     <% } %>
 <br>
@@ -51,7 +51,7 @@
 
 <%-- Boucle for pour afficher un triangle d'étoiles --%>
     <% for (int i = 1; i <= cpt; i++) { %>
-     <% for (int j =1; j <= i; j++) { %> 
+     <% for (int j = 1; j <= i; j++) { %> 
         <%= "*" %>
     <% } %>
 <br>
@@ -64,7 +64,7 @@
 <p>*****</br>****</br>***</br>**</br>*</p>
 <%-- Boucle for pour afficher un triangle d'étoiles inversé --%>
     <% for (int i = 1; i <= cpt; i++) { %>
-     <% for (int j =i; j > i; j++) { %> 
+     <% for (int j = i; j > i; j++) { %> 
        <%= "*" %> 
 <% } %>
 <br>
@@ -79,9 +79,10 @@
 
 <%-- Boucle for pour afficher un triangle d'étoiles aligné sur la droite --%>
     <% for (int i = 1; i <= cpt; i++) { %>
-    <% for (int j =1; j <= cpt; j++) { %>
+    <% for (int j = 1; j <= cpt; j++) { %>
        &nbsp;
-    <% for (int k =1; k <= i; k++) { %> 
+<% } %>
+    <% for (int k = 1; k <= i; k++) { %> 
     <%= "*" %>
     <% } %>
 <br>
@@ -95,9 +96,10 @@
 <%-- Boucle for pour afficher un triangle isocele d'étoiles --%>
 
     <% for (int i = 1; i <= cpt; i++) { %>
-    <% for (int j =1; j <= cpt -i; j++) { %>
+    <% for (int j = 1; j <= cpt -i; j++) { %>
       &nbsp;
-    <% for (int k =1; k <= i; k++) { %> 
+<% } %>
+    <% for (int k = 1; k <= i; k++) { %> 
        <%= "*" %> 
     <% } %>
 <br>
@@ -112,20 +114,21 @@
 
 <%-- Boucle for pour afficher un demi losange d'étoiles  --%>
     <% for (int i = 1; i <= cpt; i++) { %>
-    <% for (int j =1; j <= cpt; j++) { %>
+    <% for (int j = 1; j <= cpt; j++) { %>
 &nbsp;
-    <% for (int k =1; k= i; K++){ %>
+<% } %>
+    <% for (int k = 1; k = i; K++){ %>
         <%= "*" %>
     <% } %>
 <br>
     <% } %>
     </p>
-<% for (int i = 1; i <= cpt; i++) { %>
-    <% for (int j = cpt; j > i; j++) { %> 
+<% for (int i = cpt - 1; i >= cpt; i--) { %>
+    <% for (int j = cpt; j <= cpt - i; j++) { %> 
 
 &nbsp;
-
- <% for (int k =1; k= i; K++){ %>
+<% } %>
+ <% for (int k = 1; k = i; K++){ %>
     <%= "*" %>
 <% } %>
 <br>
