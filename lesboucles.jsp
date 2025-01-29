@@ -12,14 +12,13 @@
 </form>
 
 <%-- Récupération de la valeur saisie par l'utilisateur --%>
-<% String valeur = request.getParameter("valeur"); %>
+<% String valeur = request.getParameter("valeur"); 
     
 <%-- Vérification de l'existence de la valeur --%>
-<% if (valeur != null && !valeur.isEmpty()) { %>
-
-<%-- Boucle for pour afficher une ligne d'étoiles --%>
-    <%int cpt = Integer.parseInt(valeur); %>
-    <p>
+<% if (valeur != null && !valeur.isEmpty()) { 
+<%int cpt = Integer.parseInt(valeur); %>
+<p>
+<%-- Boucle for pour afficher une ligne d'étoiles --%> 
     <% for (int i = 1; i <= cpt; i++) { %>
        *
     <% } %>
@@ -30,17 +29,18 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>*****</br>*****</br>*****</br>*****</br>*****</p>
 <%-- Vérification de l'existence de la valeur --%>
-<% if (valeur != null && !valeur.isEmpty()) { %>
+<% if (valeur != null && !valeur.isEmpty()) {
+<%int cpt = Integer.parseInt(valeur); %>
+    <p>
 
 <%-- Boucle for pour afficher un carré d'étoiles --%>
-    <%int cpt = Integer.parseInt(valeur); %>
-    <p>
     <% for (int i = 1; i <= cpt; i++) { %>
-     <% for (int j =1; j <= cpt; j++) { %> * <% } %>
+     <% for (int j =1; j <= cpt; j++) { %>
+        * 
+    <% } %>
 <br>
     <% } %>
     </p>
-
 
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
@@ -54,7 +54,9 @@
     <%int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
-     <% for (int j =1; j <= i; j++) { %> * <% } %>
+     <% for (int j =1; j <= i; j++) { %> 
+        * 
+    <% } %>
 <br>
     <% } %>
     </p>
@@ -88,8 +90,10 @@
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
     <% for (int j =1; j <= cpt; j++) { %>
-       <%= "&nbsp" %>
-    <% for (int k =1; k <= i; k++) { %> * <% } %>
+       <%= "&nbsp;" %>
+    <% for (int k =1; k <= i; k++) { %> 
+    * 
+    <% } %>
 <br>
     <% } %>
     </p>
@@ -106,8 +110,10 @@
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
     <% for (int j =1; j <= cpt -1; j++) { %>
-       <%= "&nbsp" %>
-    <% for (int k =1; k <= (i*2-1); k++) { %> * <% } %>
+       <%= "&nbsp;" %>
+    <% for (int k =1; k <= (i*2-1); k++) { %> 
+        * 
+    <% } %>
 <br>
     <% } %>
     </p>
@@ -152,7 +158,7 @@
     <%int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
-       <%=  %> * <%= cpt %> = <% i*cpt %>
+       <%= i %> * <%= cpt %> = <% i*cpt %>
     <% } %>
     </p>
 
