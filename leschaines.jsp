@@ -94,7 +94,7 @@ Lhvrsr lvex</p>
 <%
         String phrase = "L'hiver sera pluvieux";
         // Utilisation de la méthode correcte : split() au lieu de spits()
-        for (int i = 0; i<= phrase.length; i++) {
+        for (int i = 0; i<= phrase.length(); i++) {
             if (i % 2 == 0) {
     %>
         <%= phrase.charAt(i) %><br> <!-- Affiche le retour à la ligne d'une lettre sur deux -->
