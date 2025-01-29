@@ -79,12 +79,13 @@ L'hiver</br>
 sera</br>
 pluvieux</p>
  <%
-String phrase = "L'hiver sera pluvieux";
-String [] lignes = phrase.split(" ");
-for(String ligne : lignes){ 
-%>
-<%= ligne %><br>
-% } %
+        String phrase = "L'hiver sera pluvieux";
+        // Utilisation de la méthode correcte : split() au lieu de spits()
+        String[] lignes = phrase.split(" "); // On découpe la phrase en mots
+        for (String ligne : lignes) {
+    %>
+        <%= ligne %><br> <!-- Affiche chaque mot sur une nouvelle ligne -->
+    <% } %>
 
 <h2>Exercice 4 : Afficher une lettre sur deux</h2>
 <p>Ecrire le programme pour afficher seulement une lettre sur deux de votre texte </br>
