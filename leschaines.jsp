@@ -80,11 +80,11 @@ sera</br>
 pluvieux</p>
  <%
 String phrase = "L'hiver sera pluvieux";
-public static nl2br(String phrase){
-  return texte.replace("\n", "<br/>");
- 
-}
+String [] lignes = phrase.spits (" ")
+for(String ligne : lignes){ 
 %>
+<%= ligne %><br>
+% } %
 
 <h2>Exercice 4 : Afficher une lettre sur deux</h2>
 <p>Ecrire le programme pour afficher seulement une lettre sur deux de votre texte </br>
