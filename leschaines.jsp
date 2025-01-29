@@ -80,7 +80,7 @@ sera</br>
 pluvieux</p>
  <%
 String phrase = "L'hiver sera pluvieux";
-String [] lignes = phrase.spits (" ")
+String [] lignes = phrase.spits (" ");
 for(String ligne : lignes){ 
 %>
 <%= ligne %><br>
