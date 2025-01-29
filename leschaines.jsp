@@ -99,9 +99,9 @@ Lhvrsr lvex</p>
     %>
         <%= phrase.charAt(i) %><br> <!-- Affiche le retour à la ligne d'une lettre sur deux -->
     <% 
-} 
-}
-%>
+            } 
+        }
+    %>
 
 <h2>Exercice 5 : La phrase en verlant</h2>
 <p>Ecrire le programme afin d'afficher le texte en verlant </br>
