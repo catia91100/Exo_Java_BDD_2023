@@ -58,14 +58,14 @@ o</br>
 u</br>
 r</p>
 <%
-String mot = "Bonjour";
-for (char c = mot.toCharArray()){
+String chaine = "Bonjour";
+for (char c = chaine.length()){
 %>
 <p><%= c %></p>
 <%
 }
 %>
-<% } %>
+
 
 
 
