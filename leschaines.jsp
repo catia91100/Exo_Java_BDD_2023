@@ -61,9 +61,11 @@ r</p>
 String mot = "Bonjour";
 for (char c = mot.toCharArray()){
 %>
-<p> <%= c %> </p>
-
+<p><%= c %></p>
+<%
 }
+%>
+<% } %>
 
 
 
