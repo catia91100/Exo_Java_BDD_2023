@@ -15,8 +15,8 @@
 <% String valeur = request.getParameter("valeur");%> 
     
 <%-- Vérification de l'existence de la valeur --%>
-<% if (valeur != null && !valeur.isEmpty()) { 
-<%int cpt = Integer.parseInt(valeur); %>
+if (valeur != null && !valeur.isEmpty()) { 
+int cpt = Integer.parseInt(valeur); %>
 <p>
 <%-- Boucle for pour afficher une ligne d'étoiles --%> 
     <% for (int i = 1; i <= cpt; i++) { %>
@@ -29,8 +29,8 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>*****</br>*****</br>*****</br>*****</br>*****</p>
 <%-- Vérification de l'existence de la valeur --%>
-<% if (valeur != null && !valeur.isEmpty()) {
-<%int cpt = Integer.parseInt(valeur); %>
+if (valeur != null && !valeur.isEmpty()) {
+int cpt = Integer.parseInt(valeur); %>
     <p>
 
 <%-- Boucle for pour afficher un carré d'étoiles --%>
@@ -48,10 +48,10 @@
 <p>*</br>**</br>***</br>****</br>*****</p>
 
 <%-- Vérification de l'existence de la valeur --%>
-<% if (valeur != null && !valeur.isEmpty()) { %>
+ if (valeur != null && !valeur.isEmpty()) { 
 
 <%-- Boucle for pour afficher un triangle d'étoiles --%>
-    <%int cpt = Integer.parseInt(valeur); %>
+    int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
      <% for (int j =1; j <= i; j++) { %> 
@@ -66,10 +66,10 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>*****</br>****</br>***</br>**</br>*</p>
 <%-- Vérification de l'existence de la valeur --%>
-<% if (valeur != null && !valeur.isEmpty()) { %>
+if (valeur != null && !valeur.isEmpty()) { 
 
 <%-- Boucle for pour afficher un triangle d'étoiles inversé --%>
-    <%int cpt = Integer.parseInt(valeur); %>
+    int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
      <% for (int j =i; j > i; j++) { %> 
@@ -85,10 +85,10 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
 <%-- Vérification de l'existence de la valeur --%>
-<% if (valeur != null && !valeur.isEmpty()) { %>
+if (valeur != null && !valeur.isEmpty()) { 
 
 <%-- Boucle for pour afficher un triangle d'étoiles aligné sur la droite --%>
-    <%int cpt = Integer.parseInt(valeur); %>
+    int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
     <% for (int j =1; j <= cpt; j++) { %>
@@ -105,10 +105,12 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;***</br>&nbsp;****</br>*****</p>
 
 <%-- Vérification de l'existence de la valeur --%>
-<% if (valeur != null && !valeur.isEmpty()) { %>
-
+ if (valeur != null && !valeur.isEmpty()) { 
+    int cpt = Integer.parseInt(valeur); 
+%>
+    <p>
 <%-- Boucle for pour afficher un triangle isocele d'étoiles --%>
-    <%int cpt = Integer.parseInt(valeur); %>
+    int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
     <% for (int j =1; j <= cpt -1; j++) { %>
@@ -127,10 +129,11 @@
 <p>*****</br>&nbsp;&nbsp;****</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>
 
 <%-- Vérification de l'existence de la valeur --%>
-<% if (valeur != null && !valeur.isEmpty()) { %>
-
+if (valeur != null && !valeur.isEmpty()) { 
+int cpt = Integer.parseInt(valeur); %>
+    <p>
 <%-- Boucle for pour afficher un demi losange d'étoiles  --%>
-    <%int cpt = Integer.parseInt(valeur); %>
+    int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
     <% for (int j =1; j <= cpt; j++) { %> 
@@ -155,14 +158,13 @@
 <p>5 x 5 = 25</p>
 
 <%-- Récupération de la valeur saisie par l'utilisateur --%>
-<% String valeur = request.getParameter("valeur"); %>
+String valeur = request.getParameter("valeur"); 
     
 <%-- Vérification de l'existence de la valeur --%>
-<% if (valeur != null && !valeur.isEmpty()) { %>
-
-<%-- Boucle for pour afficher une ligne d'étoiles --%>
-    <%int cpt = Integer.parseInt(valeur); %>
+if (valeur != null && !valeur.isEmpty()) { 
+int cpt = Integer.parseInt(valeur); %>
     <p>
+<%-- Boucle for pour afficher une ligne d'étoiles --%>
     <% for (int i = 1; i <= cpt; i++) { %>
        <%= i %> * <%= cpt %> = <% i*cpt %>
     <% } %>
