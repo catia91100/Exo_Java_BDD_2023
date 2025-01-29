@@ -62,9 +62,11 @@ String mot = "Bonjour";
 for (char c = mot.toCharArray()){
 %>
 <p> <%= c %> </p>
-<%
+
 }
-%>
+
+
+
 <h2>Exercice 3 : Retour à la ligne</h2>
 <p>La présence d'un espace provoque un retour à la ligne </br>
 Exemple : L'hiver sera pluvieux</br>
