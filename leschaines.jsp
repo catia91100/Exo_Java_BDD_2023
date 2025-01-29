@@ -108,12 +108,13 @@ Exemple : L'hiver sera pluvieux</br>
 xueivulp ares revih'l</p>
   <%
         String phrase = "L'hiver sera pluvieux"; // Déclaration de la variable phrase
-        for (int i = phrase.length() - 1; i >= 0; i--) {
+        if (phrase != null && !phrase.isEmpty()) { 
+            for (int i = phrase.length() - 1; i >= 0; i--) {
              
     %>
                 <%= phrase.charAt(i) %><br> 
     <%  
-            
+            }  
         } 
     %>
 
