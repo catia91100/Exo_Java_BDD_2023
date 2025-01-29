@@ -91,6 +91,17 @@ pluvieux</p>
 <p>Ecrire le programme pour afficher seulement une lettre sur deux de votre texte </br>
 Exemple : L'hiver sera pluvieux</br>
 Lhvrsr lvex</p>
+<%
+        String phrase = "L'hiver sera pluvieux";
+        // Utilisation de la méthode correcte : split() au lieu de spits()
+        for (int i = 0; i<= phrase.length; i = ++) {
+            if (i % 2 == 0) {
+    %>
+        <%= phrase.charAt(i) %><br> <!-- Affiche le retour à la ligne d'une lettre sur deux -->
+    <% 
+} 
+}
+%>
 
 <h2>Exercice 5 : La phrase en verlant</h2>
 <p>Ecrire le programme afin d'afficher le texte en verlant </br>
