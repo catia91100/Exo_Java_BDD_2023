@@ -26,7 +26,7 @@
     </p>
 <%-- Boucle for pour afficher une ligne d'étoiles --%> 
     <% for (int i = 1; i <= cpt; i++) { %>
-       *
+       <%= "*" %>
     <% } %>
     </p>
 
@@ -38,7 +38,7 @@
 <%-- Boucle for pour afficher un carré d'étoiles --%>
     <% for (int i = 1; i <= cpt; i++) { %>
      <% for (int j =1; j <= cpt; j++) { %>
-       <% "*" %> 
+       <%= "*" %> 
     <% } %>
 <br>
     <% } %>
@@ -52,7 +52,7 @@
 <%-- Boucle for pour afficher un triangle d'étoiles --%>
     <% for (int i = 1; i <= cpt; i++) { %>
      <% for (int j =1; j <= i; j++) { %> 
-        <% "*" %>
+        <%= "*" %>
     <% } %>
 <br>
     <% } %>
@@ -65,7 +65,7 @@
 <%-- Boucle for pour afficher un triangle d'étoiles inversé --%>
     <% for (int i = 1; i <= cpt; i++) { %>
      <% for (int j =i; j > i; j++) { %> 
-       <% "*" %> 
+       <%= "*" %> 
 <% } %>
 <br>
     <% } %>
@@ -82,7 +82,7 @@
     <% for (int j =1; j <= cpt; j++) { %>
        <%= "&nbsp;" %>
     <% for (int k =1; k <= i; k++) { %> 
-    <% "*" %>
+    <%= "*" %>
     <% } %>
 <br>
     <% } %>
@@ -98,7 +98,7 @@
     <% for (int j =1; j <= cpt -1; j++) { %>
        <%= "&nbsp;" %>
     <% for (int k =1; k <= (i*2-1); k++) { %> 
-       <% "*" %> 
+       <%= "*" %> 
     <% } %>
 <br>
     <% } %>
@@ -113,14 +113,14 @@
 <%-- Boucle for pour afficher un demi losange d'étoiles  --%>
     <% for (int i = 1; i <= cpt; i++) { %>
     <% for (int j =1; j <= cpt; j++) { %> 
-        <% "*" %>
+        <%= "*" %>
     <% } %>
 <br>
     <% } %>
     </p>
 <% for (int i = 1; i <= cpt; i++) { %>
     <% for (int j = cpt; j > i; j++) { %> 
-    <% "*" %> 
+    <%= "*" %> 
 <% } %>
 <br>
     <% } %>
