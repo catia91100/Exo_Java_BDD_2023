@@ -91,16 +91,16 @@ pluvieux</p>
 <p>Ecrire le programme pour afficher seulement une lettre sur deux de votre texte </br>
 Exemple : L'hiver sera pluvieux</br>
 Lhvrsr lvex</p>
-<%
-        String phrase = "L'hiver sera pluvieux";
-        // Utilisation de la méthode correcte : split() au lieu de spits()
-        for (int i = 0; i < phrase.length(); i++) {
-            if (i % 2 == 0) {
+  <%
+        String lettre = "L'hiver sera pluvieux"; // Déclaration de la variable phrase
+        // Boucle pour parcourir chaque caractère de la phrase
+        for (int i = 0; i < lettre.length(); i++) {
+            if (i % 2 == 0) { // Affiche la lettre si l'indice est pair
     %>
-        <%= phrase.charAt(i) %><br> <!-- Affiche le retour à la ligne d'une lettre sur deux -->
-    <% 
-            } 
-        }
+                <%= phrase.charAt(i) %><br> 
+    <%  
+            }
+        } 
     %>
 
 <h2>Exercice 5 : La phrase en verlant</h2>
