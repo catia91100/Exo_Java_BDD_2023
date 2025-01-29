@@ -36,9 +36,7 @@
     <%int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
-     <% for (int j =1; j <= cpt; j++) { %>
-       *
-  <% } %>
+     <% for (int j =1; j <= cpt; j++) { %> * <% } %>
 <br>
     <% } %>
     </p>
@@ -56,9 +54,7 @@
     <%int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
-     <% for (int j =1; j <= i; j++) { %>
-       *
-    <% } %>
+     <% for (int j =1; j <= i; j++) { %> * <% } %>
 <br>
     <% } %>
     </p>
@@ -74,9 +70,7 @@
     <%int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
-     <% for (int j =i; j > i; j++) { %>
-       *
-  <% } %>
+     <% for (int j =i; j > i; j++) { %> * <% } %>
 <br>
     <% } %>
     </p>
@@ -95,9 +89,7 @@
     <% for (int i = 1; i <= cpt; i++) { %>
     <% for (int j =1; j <= cpt; j++) { %>
        <%= "&nbsp" %>
-    <% for (int k =1; k <= i; k++) { %>
-        *
-  <% } %>
+    <% for (int k =1; k <= i; k++) { %> * <% } %>
 <br>
     <% } %>
     </p>
@@ -115,9 +107,7 @@
     <% for (int i = 1; i <= cpt; i++) { %>
     <% for (int j =1; j <= cpt -1; j++) { %>
        <%= "&nbsp" %>
-    <% for (int k =1; k <= (i*2-1); k++) { %>
-        *
-  <% } %>
+    <% for (int k =1; k <= (i*2-1); k++) { %> * <% } %>
 <br>
     <% } %>
     </p>
@@ -135,16 +125,12 @@
     <%int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
-    <% for (int j =1; j <= cpt; j++) { %>
-        *
-  <% } %>
+    <% for (int j =1; j <= cpt; j++) { %> * <% } %>
 <br>
     <% } %>
     </p>
 <% for (int i = 1; i <= cpt; i++) { %>
-    <% for (int j = cpt; j > i; j++) { %>
-        *
-  <% } %>
+    <% for (int j = cpt; j > i; j++) { %> * <% } %>
 <br>
     <% } %>
 <h2>Exercice 7 : La table de multiplication</h2>
@@ -166,7 +152,7 @@
     <%int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
-       <%= i %> x <%= cpt %> = <% i*cpt %>
+       <%=  %> * <%= cpt %> = <% i*cpt %>
     <% } %>
     </p>
 
