@@ -58,13 +58,16 @@ o</br>
 u</br>
 r</p>
 <%
-String chaine = "Bonjour";
-for (char c = chaine.length()){
-%>
-<p><%= c %></p>
-<%
-}
-%>
+        String mot = "Bonjour";
+        for (char c : mot.toCharArray()) {
+    %>
+    <p><%= c %></p>
+    <%
+        }
+    %>
+
+    <% } else { %>
+        <p>Veuillez entrer une chaîne de caractères !</p>
 
 
 
