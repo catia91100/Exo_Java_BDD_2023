@@ -93,11 +93,10 @@ Exemple : L'hiver sera pluvieux</br>
 Lhvrsr lvex</p>
   <%
         String lettre = "L'hiver sera pluvieux"; // Déclaration de la variable phrase
-        // Boucle pour parcourir chaque caractère de la phrase
         for (int i = 0; i < lettre.length(); i++) {
-            if (i % 2 == 0) { // Affiche la lettre si l'indice est pair
+            if (i % 2 == 0) { 
     %>
-                <%= phrase.charAt(i) %><br> 
+                <%= lettre.charAt(i) %><br> 
     <%  
             }
         } 
