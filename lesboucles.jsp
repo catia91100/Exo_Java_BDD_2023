@@ -117,7 +117,7 @@
     <% for (int j = 1; j <= cpt; j++) { %>
 &nbsp;
 <% } %>
-    <% for (int k = 1; k <= i; K++){ %>
+    <% for (int k = 1; k <= i; k++){ %>
         <%= "*" %>
     <% } %>
 <br>
@@ -127,7 +127,7 @@
     <% for (int j = 1; j <= cpt - i; j++) { %> 
 &nbsp;
  <% } %>
- <% for (int k = 1; k = i; K++){ %>
+ <% for (int k = 1; k = i; k++){ %>
     <%= "*" %>
 <% } %>
 <br>
