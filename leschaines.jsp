@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+la<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
 <head>
 <title>Les chaines</title>
@@ -106,12 +106,12 @@ Lhvrsr lvex</p>
 Exemple : L'hiver sera pluvieux</br>
 xueivulp ares revih'l</p>
   <%
-        String phrase = "L'hiver sera pluvieux";
-        if (phrase != null && !phrase.isEmpty()) { 
-            for (int i = phrase.length() - 1; i >= 0; i--) {
+        String phraseVerlant = "L'hiver sera pluvieux";
+        if (phraseVerlant != null && !phrase.isEmpty()) { 
+            for (int i = phraseVerlant.length() - 1; i >= 0; i--) {
              
     %>
-                <%= phrase.charAt(i) %><br> 
+                <%= phraseVerlant.charAt(i) %><br> 
     <%  
             }  
         } 
