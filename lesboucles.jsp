@@ -123,16 +123,17 @@
 <br>
     <% } %>
     </p>
-<% for (int i = cpt - 1; i >= cpt; i--) { %>
-    <% for (int j = cpt; j <= cpt - i; j++) { %> 
+<% for (int i = cpt - 1; i >= 1; i--) { %>
+    <% for (int j = 1; j <= cpt - i; j++) { %> 
 &nbsp;
+ <% } %>
  <% for (int k = 1; k = i; K++){ %>
     <%= "*" %>
 <% } %>
 <br>
     <% } %>
 
- <% } %>
+
 
 <h2>Exercice 7 : La table de multiplication</h2>
 <p>Ecrire le code afin de créser une table de multiplication</p>
