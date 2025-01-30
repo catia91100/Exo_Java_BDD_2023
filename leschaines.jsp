@@ -80,11 +80,10 @@ sera</br>
 pluvieux</p>
  <%
         String phrase = "L'hiver sera pluvieux";
-        // Utilisation de la méthode correcte : split() au lieu de spits()
-        String[] lignes = phrase.split(" "); // On découpe la phrase en mots
+        String[] lignes = phrase.split(" "); 
         for (String ligne : lignes) {
     %>
-        <%= ligne %><br> <!-- Affiche chaque mot sur une nouvelle ligne -->
+        <%= ligne %><br> 
     <% } %>
 
 <h2>Exercice 4 : Afficher une lettre sur deux</h2>
@@ -92,7 +91,7 @@ pluvieux</p>
 Exemple : L'hiver sera pluvieux</br>
 Lhvrsr lvex</p>
   <%
-        String lettre = "L'hiver sera pluvieux"; // Déclaration de la variable phrase
+        String lettre = "L'hiver sera pluvieux"; 
         for (int i = 0; i < lettre.length(); i++) {
             if (i % 2 == 0) { 
     %>
@@ -107,7 +106,7 @@ Lhvrsr lvex</p>
 Exemple : L'hiver sera pluvieux</br>
 xueivulp ares revih'l</p>
   <%
-        String phrase = "L'hiver sera pluvieux"; // Déclaration de la variable phrase
+        String phrase = "L'hiver sera pluvieux";
         if (phrase != null && !phrase.isEmpty()) { 
             for (int i = phrase.length() - 1; i >= 0; i--) {
              
