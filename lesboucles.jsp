@@ -82,7 +82,7 @@
     <% for (int j = cpt; j > i; j--) { %>
        &nbsp;
   <% } %>
-    <% for (int k = 1; k <= i; k++) { %> 
+    <% for (int k = 1; k <= i; k++) { %>  
     <%= "*" %>
     <% } %>
 <br>
@@ -104,34 +104,34 @@
     <% } %>
 <br>
     <% } %>
-    </p>
+    </p> 
 
-<h2>Exercice 6 : Le demi losange</h2>
-<p>Ecrire le code afin de produire un losange</p>
-<p>Exemple si l'utilisateur saisie le valeur 5</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
-<p>*****</br>&nbsp;&nbsp;****</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>
+//<h2>Exercice 6 : Le demi losange</h2>
+//<p>Ecrire le code afin de produire un losange</p>
+//<p>Exemple si l'utilisateur saisie le valeur 5</p>
+//<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
+//<p>*****</br>&nbsp;&nbsp;****</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>
 
-<%-- Boucle for pour afficher un demi losange d'étoiles  --%>
-    <% for (int i = 1; i <= cpt; i++) { %>
-    <% for (int j = 1; j <= cpt; j++) { %>
-&nbsp;
-<% } %>
-    <% for (int k = 1; k <= i; k++){ %>
-        <%= "*" %>
-    <% } %>
-<br>
-    <% } %>
-    </p>
-<% for (int i = cpt - 1; i >= 1; i--) { %>
-    <% for (int j = 1; j <= cpt - i; j++) { %> 
-&nbsp;
- <% } %>
- <% for (int k = 1; k <= i; k++){ %>
-    <%= "*" %>
-<% } %>
-<br>
-    <% } %>
+//<%-- Boucle for pour afficher un demi losange d'étoiles  --%>
+    //<% for (int i = 1; i <= cpt; i++) { %>
+    //<% for (int j = 1; j <= cpt; j++) { %>
+//&nbsp;
+//<% } %>
+    //<% for (int k = 1; k <= i; k++){ %>
+        //<%= "*" %>
+    //<% } %>
+//<br>
+    //<% } %>
+    //</p>
+//<% for (int i = cpt - 1; i >= 1; i--) { %>
+    //<% for (int j = 1; j <= cpt - i; j++) { %> 
+//&nbsp;
+ //<% } %>
+ //<% for (int k = 1; k <= i; k++){ %>
+    //<%= "*" %>
+//<% } %>
+//<br>
+    //<% } %>
 
 
 
