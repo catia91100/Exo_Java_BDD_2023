@@ -126,8 +126,8 @@ int nbvoyelles = 0;
 int nbconsonnes = 0;
 int estVoyelles=0;
 
-for(int i=0; i<=strlen(chaine); i++){
-for(int j=0; j<=strlen(voyelle); j++){
+for(int i=0; i<=strlen(chaine[]); i++){
+for(int j=0; j<=strlen(voyelle[]); j++){
     if(chaine [i]== voyelle[j]){estVoyelles = 1;}
         }
 
