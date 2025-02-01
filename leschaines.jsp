@@ -126,12 +126,12 @@ int nbvoyelles = 0;
 int nbconsonnes = 0;
 %>
 
-for(char c: chain.toCharArray()){
+for(char c: chaine.toCharArray()){
 if(Character.isLetter(c)){
     if(voyelles.indexOf(c) != -1){
         nbvoyelles++;
     }else {
-        nbconsonnes++
+        nbconsonnes++;
     }
   }
 }
