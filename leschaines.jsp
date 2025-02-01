@@ -120,27 +120,26 @@ xueivulp ares revih'l</p>
 <h2>Exercice 6 : Consonnes et voyelles</h2>
 <p>Ecrire le programme afin de compter les consonnes et les voyelles dans votre texte</p>
 <% 
-char chaine [] ="l'hiver sera pluvieux";
-String voyelle [] = "aeiouyAEIOUY";
+if(chaine != null && ! chaine.isEmpty()){
+String voyelles = "aeiouyAEIOUY";
 int nbvoyelles = 0;
 int nbconsonnes = 0;
-int estVoyelles=0;
+%>
 
-for(int i=0; i<=strlen(chaine[]); i++){
-for(int j=0; j<=strlen(voyelle[]); j++){
-    if(chaine [i]== voyelle[j]){estVoyelles = 1;}
-        }
-
-    if(estVoyelles){
+for(char c: chain.toCharArray()){
+if(Character.isLetter(c)){
+    if(voyelles.indexOf(c) != -1){
         nbvoyelles++;
-    }    else {
-nbconsonnes++
-        }
+    }else {
+        nbconsonnes++
+    }
+  }
 }
 %>
 <p>le nombre de voyelles:<%= nbvoyelles %></p>
 <P>le nombre de consonnes: <%= nbconsonnes %></p>
 <%
+ 
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
