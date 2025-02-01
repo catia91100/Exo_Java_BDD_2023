@@ -138,7 +138,6 @@ if(Character.isLetter(c)){
 %>
 <p>le nombre de voyelles:<%= nbvoyelles %></p>
 <P>le nombre de consonnes: <%= nbconsonnes %></p>
-<%
  
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
