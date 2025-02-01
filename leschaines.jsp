@@ -120,19 +120,25 @@ xueivulp ares revih'l</p>
 <h2>Exercice 6 : Consonnes et voyelles</h2>
 <p>Ecrire le programme afin de compter les consonnes et les voyelles dans votre texte</p>
 char chaine [] ="l'hiver sera pluvieux";
-char voyelle [] = "aeiouyAEIOUY";
-int cpt= 0;
-int flag= 0;
+String voyelle [] = "aeiouyAEIOUY";
+int nbvoyelles = 0;
+int nbconsonnes = 0;
+int estVoyelles=0;
 
 for(int i=0; i<=strlen(chaine); i++){
 for(int j=0; j<=strlen(voyelle); j++){
-if(chaine [i]== voyelle[j]){flag = 1;}
-}
-if(flag ==1){flag==0;}
-else {sprintf("%c", chaine[i])}
+    if(chaine [i]== voyelle[j]){estVoyelles = 1;}
+        }
 
+if(estVoyelles){
+nbvoyelles++;
+}else {
+nbconsonnes++
+}
 }
 
+printf("le nombre de voyelles:%d /n", nbvoyelles)
+printf("le nombre de consonnes: %d /n", nbconsonnes)
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
